@@ -33,13 +33,16 @@ function pullTable(tdata) {
 };
     
 function makeTable(datetime, city, state, country, shape, durationMinutes, comments) {    
+    // Selecting the table and the tbody
     var myTable = d3.select(".the-table");
     var tbody = myTable.select("tbody");
     // Clearing the table
     tbody.selectAll("tr").remove();
     var trow;    
     for (i=0; i < datetime.length; i++) {
+            // Appending a row
             trow = tbody.append("tr");
+            // Appending the data to the row
             trow.append("td").text(datetime[i]);
             trow.append("td").text(city[i]);
             trow.append("td").text(state[i]);

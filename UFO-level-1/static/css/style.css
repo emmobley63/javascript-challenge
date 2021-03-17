@@ -137,6 +137,14 @@ select {
   /* Firefox 18- */
   color: #8e979f;
 }
+.aligncenter {
+  align-items: center;
+}
+.datecheck {
+  display: none;
+  align-items: center;
+  text-align: center;
+}
 
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {

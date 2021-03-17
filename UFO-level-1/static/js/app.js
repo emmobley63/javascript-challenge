@@ -80,6 +80,7 @@ function datefilter() {
     var datetimecheck = tableData.map(item => item.datetime);
     // Variable to display error message or not
     var showreturn = d3.select(".datecheck");
+    console.log(showreturn);
     // Check if input date is in mapped dates from the data (boolean) to hide the error block
     if (datetimecheck.includes(inputdate)) {
         function sameDate(datetime) {
@@ -91,12 +92,12 @@ function datefilter() {
         // Call function with new data
         pullTable(datedata);
         // Hide the "datecheck-error" block
-        showreturn.style.display = "none";
+        showreturn.style("display", "none");
         console.log("date was right but didn't change the table or style")
     }  else {
         // Else return the error block 
         console.log("date was wrong but style didn't change")
-        showreturn.style.display = "block";
+        showreturn.style("display", "block");
     };
     // Reset the button so that they can search again
 };

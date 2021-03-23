@@ -8,5 +8,5 @@ We then used a second function "pullTable" to map the data into arrays and call 
 
 In order to create a filter function, I needed input from the user and a button for the user to call my "datefilter" function with the new criteria. I used d3 to call the class of the button create an event on the filter button.
 
-Within my called "datefilter" function, I used d3 to assign the user input to a variable. I then used this to check against the dates in my dataset. An if statement returns the filtered data to the user or an error message.
+Within my called "datefilter" function, I used d3 to assign the user input to a variable. I then used this to check against the dates in my dataset. An if statement returns the filtered data to the user or a hidden error block appears below the filter data.
 

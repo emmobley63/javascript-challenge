@@ -72,10 +72,8 @@ function datefilter() {
         pullTable(datedata);
         // Hide the "datecheck-error" block
         showreturn.style("display", "none");
-        console.log("date was right but didn't change the table or style")
     }  else {
         // Else return the error block 
-        console.log("date was wrong but style didn't change")
         showreturn.style("display", "block");
     };
     // Reset the button so that they can search again
@@ -83,11 +81,4 @@ function datefilter() {
 
 init(tableData);
 
-
-
-function addNewRow(item) {
-    myTable = "";
-    // myTable += <tr>
-        
-    // </tr>
 };

@@ -6,4 +6,7 @@ First, I had to create a function that used d3 to locate the part of the Index p
 
 We then used a second function "pullTable" to map the data into arrays and call our "makeTable" function.
 
-In order to create a filter function, I needed input from the user and a button for the user to recall the previous functions with the new criteria. I used d3 to call the class of the button create an event on the filter button. 
+In order to create a filter function, I needed input from the user and a button for the user to call my "datefilter" function with the new criteria. I used d3 to call the class of the button create an event on the filter button.
+
+Within my called "datefilter" function, I used d3 to assign the user input to a variable. I then used this to check against the dates in my dataset. An if statement returns the filtered data to the user or an error message.
+

@@ -5,16 +5,8 @@ function init(data) {
     pullTable(data);
 }
 
-
-// YOUR CODE HERE!
-keys = Object.keys(data[0]);
-console.log(keys);
-
-//if exists -> variable equal to filtered data 
-
-//Otherwise I can manually generate them
+// Creating arrays to loop through and call the table building function
 function pullTable(tdata) {
-    //clearing the table
     var datetime = tdata.map(item => item.datetime);
     var city = tdata.map(item => item.city);
     var state = tdata.map(item => item.state);
@@ -23,13 +15,6 @@ function pullTable(tdata) {
     var durationMinutes = tdata.map(item => item.durationMinutes);
     var comments = tdata.map(item => item.comments);
     makeTable(datetime, city, state, country, shape, durationMinutes, comments);
-    // console.log(datetime);
-    // console.log(city);
-    // console.log(state);
-    // console.log(country);
-    // console.log(shape);
-    // console.log(durationMinutes);
-    // console.log(comments);
 };
     
 function makeTable(datetime, city, state, country, shape, durationMinutes, comments) {    
@@ -64,12 +49,6 @@ console.log(filterclick);
 //     console.log("It works");
 // }
 
-
-// Conditional for the filter function
-
-// function sameDate(datetime, inputdate) {
-//     return datetime.datetime === inputdate;
-// };
 
 function datefilter() {
     // Variable for the input date by the user
